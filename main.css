@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Tektur:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;;
+    box-sizing: border-box;
+    font-family:Tektur ;
+    scroll-behavior: smooth;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background-color: rgb(59, 61, 61);
+}
+section {
+    min-height: 100vh;
+    padding: 0 12rem 0;
+}    
+.header{
+    padding: 0.3rem 1rem 0.3rem 2rem  ;
+    background: rgb(112, 19, 19);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sera{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 5rem;
+}
+.navbar a{
+    color: white;
+    font-size: 1.5rem;
+    font-family:Tektur ;
+    margin: 0 0 0 3rem ;
+    text-decoration: none;
+    padding: 1rem;
+}
+.navbar a:hover{
+    font-size: 2.2rem;
+    color: black;
+    transition: 0.7s;
+}
+.navbar a.clicked{
+    font-size: 2.2rem;
+    color: black;
+    transition: 0.7s;
+}
+#dots{
+    font-size: 2rem;
+    color: white;
+    display: none;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text h3{
+    font-size: 3rem;
+    font-weight: 800;
+    font-family:Tektur ;
+    color:rgb(112, 19, 19) ;
+   
+}
+span{
+    color: rgb(112, 19, 19);
+    font-weight: bolder;
+}
+.text h1{
+    font-size: 5rem;
+    font-weight: 1200;
+    font-family:Tektur ;
+    color: rgb(255, 255, 255);
+}
+.text p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.icons a {
+    width: 4rem;
+    height: 4rem;
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid rgb(112, 19, 19);
+    border-radius: 50%;
+    font-size: 3rem;
+    color: rgb(112, 19, 19); 
+    margin: 3rem 1rem 3rem 0;
+    transition: 0.5s;
+}
+.icons a:hover{
+    background:rgb(112, 19, 19) ;
+    color: rgb(255, 255, 255);
+    border: white;
+}
+.images img{
+    width: 40vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(59, 61, 61);
+}
+.about_image img{
+    width: 60vh;
+}
+.about_text {
+    font-size: 4rem;
+    margin-left: 1rem;
+    transition: 0.5s;
+}
+.about_text h1{
+    font-size: 4rem;
+    margin-left: 1rem;
+    transition: 0.5s;
+}
+.about_text h1:hover{
+    color: white;
+    transform: scale(1.05);
+}
+.about_text h2{
+    font-size: 2.5rem;
+    padding: 1rem 0 1rem 0;
+    color: white;
+}
+.about_text p{
+    font-size: 1.5rem;
+}
+.click{
+    display: inline-block;
+    background: rgb(112, 19, 19);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 5rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    transition: 0.5s;
+}
+.click:hover{
+    box-shadow: none;
+    background: black;
+}
+.services{
+    background-color: rgb(108, 106, 106);
+}
+.services111{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.services h1{
+   font-size: 5rem;
+   position: relative;
+   left: 27%;
+   top: 3rem;
+   margin-bottom: 6rem;
+   transition: 0.5s;
+}
+.services h1:hover{
+    color: white;
+    transform: scale(1.05);
+}
+.services_text{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border: 0.3rem solid rgb(112, 19, 19);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: 0.3s;
+}
+.services_text:hover{
+    border-color: black;
+    transform: scale(1.05);
+}
+.services_text h2{
+    color: rgb(112, 19, 19);
+    text-align: center;
+    font-size: 150%;
+    padding: 1rem;
+}
+.services_text .click{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services111 p{
+    padding: 0.5rem;
+}
+.services_icons{
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.designs{
+    background-color: rgb(59, 61, 61);
+}
+.designs111{
+    display:grid;
+    grid-template-columns: auto auto auto ;
+    gap: 2rem;
+}
+.designs h1{
+    margin-top: 3rem;
+    font-size: 4rem;
+   position: relative;
+   left: 27%;
+   margin-bottom: 4rem;
+   transition: 0.5s;
+}
+.designs h1:hover{
+    color: white;
+    transform: scale(1.05);
+}
+.designs111 .designs_img{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+.designs_img{
+    width: 20vw;
+    border-radius: 1rem;
+    border: 0.2rem solid white;
+}
+.designs_img:hover{
+    border-color: black;
+}
+.designs_img img{
+    border-radius: 1rem;
+    transition: 0.5s;
+    width: 100%;
+    transition: 0.5s;
+}
+.designs_img:hover img{
+    transform: scale(1.1);
+}
+.designs_img .designstext{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0, .1), rgb(112, 19, 19));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+    transform: translateY(100%);
+    transition: 0.7s;
+}
+.designs_img:hover .designstext{
+    transform: translateY(0);
+}
+.designstext a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+.designstext a i{
+    font-size: 2rem;
+    color: black;
+}
+.contact{
+    background-color: rgb(108, 106, 106);
+}
+.contact h1{
+    padding-top: 3rem;
+    font-size: 4rem;
+   position: relative;
+   left: 34%;
+   margin-bottom: 4rem;
+   transition: 0.5s;
+}
+.contact h1:hover{
+    color: white;
+    transform: scale(1.05);
+}
+
+.contact .click{
+    margin-bottom: 5rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input input{
+    margin: 1rem;
+    width: 100%;
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+    background: rgb(112, 19, 19);
+    border-radius: 1rem;
+    max-width:1rem 0;
+    border: 0.2rem solid black;
+    transition: 0.5s;
+}
+.contact form .input input:hover{
+    border: 0.2rem solid white;
+}
+.contact form textarea{
+    margin: 1rem;
+    width: 97%;
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+    background: rgb(112, 19, 19);
+    border-radius: 1rem;
+    max-width:1rem 0;
+    border: 0.2rem solid black;
+    transition: 0.5s;
+}
+.contact form textarea:hover{
+    border: 0.2rem solid white;
+}
+.contact form .input input{
+width: 47%;
+}
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 991px){
+    .header{
+        padding: 2rem 3%;
+    }
+    section {
+        padding: 10rem 3% 2rem;
+    }
+    .services{
+        padding-bottom: 7rem;
+    }
+    .designs{
+        padding-bottom: 7rem;
+    }
+    .contact{
+        min-height: auto;
+    }
+}
+@media (max-width: 768px){
+    #dots{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: rgb(59, 61, 61);
+        border-top:0.1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .nabvar .clicked{
+        display: block;
+    }
+    
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .main{
+        flex-direction: column;
+    }
+    
+    .text h3{
+        font-size: 2.6rem;
+    }
+    .text h1{
+        font-size: 5rem;
+    }
+    .images img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .services h1{
+        margin-bottom: 3rem;
+    }
+    .designs h1{
+        margin-bottom: 3rem;
+    }
+    .designs111{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 617px){
+    .designs111{
+        grid-template-columns: 1fr;    
+    }
+    .designs_img{
+        width: 90vw;
+    }
+    .contact form .input input{
+        width: 100%;
+    }
+}
+@media (max-width: 450px)
+{
+    html{
+        font-size:50% ;
+    }
+    .contact form .input input{
+        width: 100%;
+    }
+}
+@media (max-width: 365px)
+{
+     .images img{
+        width: 90wv;
+     }
+     
+     .about_image img{
+        width: 90wv;
+     }
+}
